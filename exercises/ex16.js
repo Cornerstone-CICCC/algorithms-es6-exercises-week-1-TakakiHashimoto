@@ -1,5 +1,6 @@
 /*
-For this quiz, you're going to create a function called buildTriangle() that will accept an input (the triangle at its widest width) and will return the string representation of a triangle. See the example output below.
+For this quiz, you're going to create a function called buildTriangle() that will accept an input (the triangle at its widest width) 
+and will return the string representation of a triangle. See the example output below.
 
 buildTriangle(10);
 Returns:
@@ -14,7 +15,8 @@ Returns:
 * * * * * * * * 
 * * * * * * * * * 
 * * * * * * * * * * 
-We've given you one function makeLine() to start with. The function takes in a line length, and builds a line of asterisks and returns the line with a newline character.
+We've given you one function makeLine() to start with. 
+The function takes in a line length, and builds a line of asterisks and returns the line with a newline character.
 
 function makeLine(length) {
   var line = "";
@@ -35,3 +37,12 @@ function makeLine(length) {
     }
     return line + "\n";
 }
+
+function buildTriangle(width){
+  for (let i = 1; i <= width; i++){
+    let block = makeLine(i);
+    console.log(block);
+  }
+}
+
+buildTriangle(10)
