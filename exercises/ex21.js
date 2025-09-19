@@ -6,3 +6,14 @@ TIP: The 1st element of any array has an index of 0.
 
 Afterwards, print out the prices array to the console.
 */
+
+var prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
+
+let changedIndex = [0, 2, 4];
+let changedValue = [1.11, 2.22, 3.33];
+
+for (let i = 0; i < changedIndex.length; i++){
+    prices[changedIndex[i]] = changedValue[i];
+}
+
+console.log(prices);
