@@ -1,7 +1,8 @@
 /*
 Write a for loop that prints out the factorial of the number 12:
 
-A factorial is calculated by multiplying a number by all the numbers below it. For instance, 3! or "3 factorial" is 3 * 2 * 1 = 6
+A factorial is calculated by multiplying a number by all the numbers below it. For instance, 
+3! or "3 factorial" is 3 * 2 * 1 = 6
 
 3! = 3 * 2 * 1 = 6
 4! = 4 * 3 * 2 * 1 = 24
@@ -9,3 +10,11 @@ A factorial is calculated by multiplying a number by all the numbers below it. F
 
 Save your final answer in a variable called solution and print it to the console.
 */
+
+let factorial = 1;
+
+for (let i = 12; i > 0; i--){
+    factorial = factorial * i;
+}
+
+console.log(factorial);
