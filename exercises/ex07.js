@@ -1,5 +1,6 @@
 /*
-In 2015, the U.S. Bureau of Labor Statistics conducted research to reveal how average salary is directly related to the number of years spent in school. In their findings, they found that people with:
+In 2015, the U.S. Bureau of Labor Statistics conducted research to reveal 
+how average salary is directly related to the number of years spent in school. In their findings, they found that people with:
 
 no high school diploma earned an average of $25,636/year,
 a high school diploma earned an average of $35,256/year,
@@ -18,6 +19,29 @@ Fill in the blanks with the type of education and the expected average salary. M
 
 In 2015, a person with a Bachelor's degree earned an average of $59,124/year.
 
-TIP: To print out the average salary with commas (i.e. 59,124), use the toLocaleString() method and pass it the locale "en-US". For example, salary.toLocaleString("en-US"). 
+TIP: To print out the average salary with commas (i.e. 59,124), use the toLocaleString() method and pass it the locale "en-US". 
+For example, salary.toLocaleString("en-US"). 
 
 */
+
+let degree = "doctoral degree";
+let salary ;
+
+switch (degree.toLowerCase()) {
+    case "no high school":
+        salary = 25636;
+    case "high school diploma":
+        salary = 35256;
+    case "associate's degree":
+        salary = 41496;
+    case "bachelor's degree":
+        salary = 59124;
+    case "master's degree":
+        salary = 69732;
+    case "professional degree":
+        salary = 89960;
+    case "doctoral degree":
+        salary = 84396;
+}
+
+console.log(`In 2015, a person with ${degree} earned an average of $ ${salary.toLocaleString("en-US")}/year.`)
