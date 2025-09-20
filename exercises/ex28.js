@@ -11,3 +11,21 @@ deleteMessage(index) - removes the message corresponding to the index provided
 addFriend() - increases the friend count by 1
 removeFriend() - decreases the friend count by 1
 */
+
+const facebookProfile = {
+    name: "Takaki",
+    numOfFriend: 4,
+    mssgs: ["It's a good day", "Today is sunny", "I don't wanna do anything today"],
+    postMessage: function(message){
+        this.mssgs.push(message);
+    },
+    deleteMessage: function(index){
+        this.mssgs.splice(index, 1);
+    },
+    addFriend: function(){
+        this.numOfFriend++;
+    },
+    removeFriend: function(){
+        this.numOfFriend--;
+    }
+}
